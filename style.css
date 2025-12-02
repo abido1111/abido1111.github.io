@@ -1,5 +1,43 @@
 /* --- STYLES GÉNÉRAUX --- */
 body {
+    /* --- FOND ESTHÉTIQUE ANIMÉ --- */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    background-attachment: fixed;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Formes flottantes */
+.floating-shape {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: rgba(255,255,255,0.15);
+    filter: blur(40px);
+    border-radius: 50%;
+    animation: float 12s infinite ease-in-out;
+}
+
+.floating-shape:nth-child(1) {
+    top: -50px;
+    left: -50px;
+}
+
+.floating-shape:nth-child(2) {
+    bottom: -60px;
+    right: -60px;
+    animation-duration: 16s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-50px) translateX(30px); }
+    100% { transform: translateY(0px) translateX(0px); }
+}
+
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f5f5;
