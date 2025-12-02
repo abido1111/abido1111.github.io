@@ -1,11 +1,4 @@
-/* --- STYLES GÉNÉRAUX --- */
-/*body {
- 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
-    color: #333;
-}*/
+
    /* --- FOND ESTHÉTIQUE ANIMÉ --- */
 body {
     margin: 0;
@@ -90,7 +83,7 @@ nav a:hover {
 .btn {
     background: white;
     color: #
-
+}
     /* --- ANIMATION FADE-IN + SLIDE --- */
 section, #hero, header, footer {
     opacity: 0;
